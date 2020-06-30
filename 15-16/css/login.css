@@ -1,0 +1,59 @@
+.signup-container {
+  border: 1px solid #fff;
+  box-shadow:  0px 8px 17px 0px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  height: 600px;
+  margin: 50px 50px;
+}
+
+.loginlink-section {
+  background:#dc3545;
+  padding: 220px 30px;
+  height: 600px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  border-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.round-btn {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  background: #dc3545;
+  padding: 7px 30px;
+  color: #fff;
+}
+
+.round-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.admin-signup {
+  padding: 100px 30px;
+}
+
+.admin-login h1, .admin-signup h1 {
+  padding: 15px 0;
+  color: #ff2b2b;
+  text-align: center;
+}
+
+.admin-login {
+  padding: 200px 40px;
+}
+
+.admin-greeting {
+  background: #dc3545;
+  padding: 220px 30px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  height: 600px;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
