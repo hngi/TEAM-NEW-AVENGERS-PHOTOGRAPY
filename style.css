@@ -1,0 +1,43 @@
+.navbar-brand{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.05rem;
+    line-height: 36px;
+    color: #B3001B;
+}
+
+.navbar{
+    background-color: #ffffff;
+    border: none;
+}
+
+.nav-item .nav-link{
+    color: #262626;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 22px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.active .nav-link{
+    color: #B3001B;
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+.btn{
+    background: #B3001B;
+    border-radius: 2px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
