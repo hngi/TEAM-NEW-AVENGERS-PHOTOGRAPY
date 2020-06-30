@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar.scrolled{
+    background-color: black;
+}
+.navbar-brand{
+    margin-left: 100px;
+}
+.nav-link{
+    color: #fff !important;
+    padding-right: 10px; 
+}
+nav li {
+    font-size: 24px;
+    
+}
+nav li a{
+    line-height: 28px;
+    margin-right: 37.6px !important;
+}
+nav li .btn{
+    background-color:  #337AB7;
+    width: 299px;
+    height: 63px;
+    font-size: 24px;
+}
+
+.wrapper{
+    background: url(../images/grayscale-photography-of-smiling-man-back-hugging-smiling-3031376\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#wrapper .justify-center{
+    position: absolute;
+    top:40%;
+    padding: 60px;
+}
+.display-3, .display-2, .lead{
+    font-family: 'Playfair Display', serif;
+}
+section #carousel{
+    margin: 0px 200px;
+    background: rgba(11, 12, 16, 0.2);
+}
+#carousel .img{
+    height: 447px;
+}
+#portfolio{
+    background-color: #337AB7;
+    color: #fff;
+}
+.portfolio-icon{
+    background: url(/images/married-couple-about-to-kiss-3347415\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
