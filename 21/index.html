@@ -108,8 +108,8 @@
   display: none; 
 }
 @media (max-width: 960px) {
-  nav ul     { display: none; }
-  nav select { display: inline;}
+  /* nav ul     { display: none; }
+  nav select { display: inline;} */
   .canvas { display: none;}
   .canvas-span { display: inline;
       color: #0047BA;
@@ -117,6 +117,7 @@
     font-size: 16px;
 line-height: 150%;
 }
+
 }
 
     </style>
@@ -125,38 +126,61 @@ line-height: 150%;
 
 
 <body>
+  <nav id="mainnav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <a href="#" class="navbar-brand">
+      <h1 class="canvas" style="margin-left: 20px; font-size: 30px;">THE </h1>
+        <h1 class="canvas" style="margin-left: 20px; font-size: 30px;"> CANVAS</h1>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse right" id="navlinks">
+        <ul class="navbar-nav nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">+211 7896 323</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-instagram" aria-hidden="false"></i></a>
+        </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-twitter" aria-hidden="false"></i></a>
+        </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-12" style="margin: 37px;">   
+    </div>
+  </div>
+</div>
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-3">
+          <br/>   
+          <br/>
+            <div class="col-sm-12 col-lg-4">
                 <p>Hello there, my name is <span class="canvas-span"> THE CANVAS </span> </p>
                 <h1 class="canvas">THE </h1>
                 <h1 class="canvas"> CANVAS</h1>
                 <P style="color: #6C85AD;">I Am A Photographer based in No Man’s Land, 
                 very passionate about documenting travel in pictures.</P>
             </div>
-
-            <div class="col-sm-12 col-lg-6 bg top-image">
-                <img src="images/img-1.png" class="img-fluid" alt="">
+      
+            <div class="col-sm-12 col-lg-8 bg top-image">
+                <img class="img-fluid" src="images/img-1.png"  alt="">
             </div>
 
-            <!-- <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Site Name</a>
-                </div>
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                   <li class="lis"><a href="#">GALLERY</a></li> 
-                <li class="lis"> <a href="#">SERVICES</a></li>
-                <li class="lis"> <a href="#">PRICING</a></li>
-                <li class="lis"> <a href="#">+211 7896 323</a></li>
-                <li class="lis"><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>  
-                <li class="lis"><a href="#"> <i class="fas fa-twitter" aria-hidden="true"></i></a></li>  
-                </ul>
-              </div>
-            </nav> -->
 
-            <nav class="col-sm-12 col-lg-2 text-center" style="color: #6C85AD; margin-bottom: 40px;" >
+            <!-- <nav class="col-sm-12 col-lg-2 text-center" style="color: #6C85AD; margin-bottom: 40px;" >
               <ul style="list-style-type: none;">
                 <li class="lis"><a href="#">GALLERY</a></li> 
                 <li class="lis"> <a href="#">SERVICES</a></li>
@@ -173,7 +197,7 @@ line-height: 150%;
               <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
               <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
             </select>
-            </nav>
+            </nav> -->
            
 
         </div>
@@ -411,8 +435,7 @@ line-height: 150%;
             <div class="col-4 bg-white ">
                 <br/>
                 <h3 class="text-center text-primary">Contact Me</h3>
-                <p class="text-center">You can fill in lodbjfsjbs jhc sjh vjb vjsviv sjvs 
-                jhsfofv svnj isjv sjvo . S jfhsf jshf isjf sijsv skjsdv js.</p>
+                <p class="text-center">You can fill this form, I'm always available to work and give you best exprience.</p>
                 <form>
                     <div class="form-group">
                       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
@@ -466,10 +489,8 @@ line-height: 150%;
 
  <!-- Footer -->
  <footer class="page-footer font-small blue pt-4" style="background-color: #D0DEF4;">
-
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
-
     <!-- Grid row -->
     <div class="row">
 
