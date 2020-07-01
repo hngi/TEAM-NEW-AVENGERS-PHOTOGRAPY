@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+
+.brand-color {
+  color: #2B7A7B
+}
+
+.brand-color-bg {
+  background-color: #2B7A7B
+}
+
+:root {
+  --brand-color: #2B7A7B;
+}
+
+/* nav bar */
+
+.nav-wrapper {
+  background-image: url('../images/header.png');
+  background-position: center;
+  background-size: cover;
+  /* height: 90vh; */
+  /* margin-bottom: 50px; */
+}
+
+.nav-item {
+  border-bottom: 2px var(--brand-color) solid;
+}
+
+.nav-item svg {
+  color: var(--brand-color)
+}
+
+.nav-link {
+  color: black;
+}
+/* nav bar */
+
+ /* sections */
+ .star {
+   color: var(--brand-color)
+ }
+  /* sections */
+
+
+
+
+
+
+
+
+
+
+
+/* Back to top button*/
+
+.back-to-top {
+  position: fixed;
+  color: var(--pink);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top__footer {
+  color: var(--pink);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon,
+.back-to-top__footer .backIcon {
+  background-color: white;
+  border: 2x solid var(--pink);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover,
+.back-to-top__footer .backIcon:hover {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top:hover .backIcon,
+.back-to-top__footer:hover .backIcon {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top .backIcon:active .back-to-top__footer:active {
+  color: white;
+  background-color: var(--pink);
+}
+
+.back-to-top__footer {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .back-to-top {
+    display: none;
+  }
+
+  .back-to-top__footer {
+    position: absolute;
+    display: block;
+  }
+}
+
+.toggle-icon {
+  color: black
+}
+
+#nav {
+  display: none
+}
+
+/* Back to top button*/
+
+/* Extra small devices (phones, 600px and down) */
+
+
+@media only screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem
+  }
+  .hero p {
+    font-size: 1.5rem
+  }
+
+  .niche h1 {
+    font-size: 2rem;
+    color: white
+  }
+
+  .niche p {
+    font-size: 1rem;
+    color: white
+  }
+
+  #niche {
+    background-image: url('../images/header (5).png');
+    background-position: center;
+    background-size: cover;
+  }
+  #gallery {
+    height: 20rem !important;
+    background-position: center; 
+    background-size: cover
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #gallery {
+    min-height: 30rem
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #gallery {
+    min-height: 30rem
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  #gallery {
+    min-height: 30rem
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #gallery {
+    min-height: 30rem
+  }
+}
+

@@ -1,0 +1,104 @@
+body{
+    box-sizing: border-box !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+
+/* Globals */
+.color-none{
+    background:none !important;
+}
+
+
+.font-playfair{
+    font-family: 'Playfair Display', serif !important;
+}
+
+/* Header and Navs */
+#header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/Hero-Section.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+#header .navbar .container .nav-item  .nav-link{
+    color: #fff !important;
+}
+
+#header .navbar .container .nav-item a:hover{
+    cursor: pointer;
+    background: #2B7A78;
+    border-radius: 5px;
+    transition: ease-in 300ms;
+}
+
+.navbar-brand{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    color: #fff !important;
+    border:none !important;
+}
+
+
+
+
+/* Intro Section */
+#intro-section{
+    margin-top: 5rem;
+}
+
+.intro-learn-more-btn{
+    display: block;
+    width: 200px !important;
+    margin: auto !important;
+    margin-top: 2em !important;
+    background: #2B7A78;
+    color: #fff;
+}
+
+#intro-section .breadcrumb{
+    background:none;
+    margin-top: 5.5rem;
+}
+
+/* Footer */
+#footer{
+    background: #1F252A;
+    margin-top: 3em;
+    margin-bottom: 0px !important;
+    padding: 1.2em;
+}
+
+#footer .breadcrumb{
+    background: none !important;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:576px){
+    #intro-section h1{
+        font-size:1.5em !important;
+    }
+
+    #intro-section .breadcrumb{
+        margin-top: 4em;
+    }
+}
+
+@media screen and (max-height:500px){
+    #intro-section{
+        margin-top: 0rem;
+    }
+
+    #intro-section .breadcrumb{
+        display: none;
+    }
+}

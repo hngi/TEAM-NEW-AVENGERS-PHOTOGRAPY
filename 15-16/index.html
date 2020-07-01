@@ -7,12 +7,18 @@
     <title>Sleek Photography</title>
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto+Condensed&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- Glide CSS -->
+    <link rel="stylesheet" href="dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="dist/css/glide.theme.min.css">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/glider.css">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+   
 
   </head>
 
@@ -112,70 +118,68 @@
       <div class="section-title text-center">
         <h1>Portfolio</h1>
       </div>
-      <div class="portfolio">
+      <div class="portfolio hide-on-mobile">
 
-        <div class="glider-contain">
-          <div class="glider">
-            <div>
-              <img src="./img/slide1.png" class="img-fluid" alt="">
-            <p class="small-title">Album No.1</p>
-            <p>Oyo State, Ibadan.</p>
+       <div class="glider-contain slides">
+        <div class="glide container">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides list-unstyled mt-4">
+              <li class="glide__slide media">
+                <img src="./img/slide1.png" class="img-fluid" alt="">
+              
+              </li>
+              <li class="glide__slide media">
+                <img src="./img/slide2.png" class="img-fluid" alt="">
+               
+              </li>
+             
+              <li class="glide__slide media">
+                <img src="./img/slide3.png" class="img-fluid" alt="">
+            
+              </li>
+              <li class="glide__slide media">
+                <img src="./img/slide3.png" class="img-fluid" alt="">
+             
+              </li>
+              <li class="glide__slide media">
+                <img src="./img/slide3.png" class="img-fluid" alt="">
+             
+              </li>
+            </ul>
           </div>
-            <div>
-              <img src="./img/slide2.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.2</p>
-              <p>The White House, USA.</p>
-            </div>
-            <div>
-              <img src="./img/slide3.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.3</p>
-              <p>The Taj Mahal, India.</p>
-            </div>
-            <div>
-              <img src="./img/slide1.png" class="img-fluid" alt="">
-            <p class="small-title">Album No.1</p>
-            <p>Oyo State, Ibadan.</p>
-          </div>
-            <div>
-              <img src="./img/slide2.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.2</p>
-              <p>The White House, USA.</p>
-            </div>
-            <div>
-              <img src="./img/slide3.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.3</p>
-              <p>The Taj Mahal, India.</p>
-            </div>
 
+          <div class="glide__arrows" data-glide-el="controls">
+            <i class="fa fa-chevron-left glide__arrow glide__arrow--left" data-glide-dir="<"></i>
+            <i class="fa fa-chevron-right glide__arrow glide__arrow--right" data-glide-dir=">"></i>
           </div>
-        
-          <button aria-label="Previous" class="glider-prev">«</button>
-          <button aria-label="Next" class="glider-next">»</button>
-          <div role="tablist" class="dots"></div>
         </div>
+        </div>
+       </div>
+         
        
-        <div class="slider container d-md-none">
-          <div class="row">
-            <div class="col-md-4 col-12">
-              <img src="./img/slide1.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.1</p>
-              <p>Oyo State, Ibadan.</p>
-            </div>
-            <div class="col-md-4 col-12">
-              <img src="./img/slide2.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.2</p>
-              <p>The White House, USA.</p>
-            </div>
-            <div class="col-md-4">
-              <img src="./img/slide3.png" class="img-fluid" alt="">
-              <p class="small-title">Album No.3</p>
-              <p>The Taj Mahal, India.</p>
-            </div>
+    <div class="portfolio hide-on-large">
+      <div class=" container">
+        <div class="row slider">
+          <div class="col-md-4 col-12 slider">
+            <img src="./img/slide1.png" class="img-fluid" alt="">
+            <p class="small-title">Album No.1</p>
+            <p>Oyo State, Ibadan.</p>
           </div>
-          <button class="btn btn-green"> view-more</button>
+          <div class="col-md-4 col-12">
+            <img src="./img/slide2.png" class="img-fluid" alt="">
+            <p class="small-title">Album No.2</p>
+            <p>The White House, USA.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="./img/slide3.png" class="img-fluid" alt="">
+            <p class="small-title">Album No.3</p>
+            <p>The Taj Mahal, India.</p>
+          </div>
         </div>
+        <button class="btn btn-green"> view-more</button>
       </div>
-      
+    </div
+    
     </div>
 
     <div class="contact-section">
@@ -240,29 +244,36 @@
       </div>
     </footer>
 
+    <!-- Glide Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/glider.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/owlss.js"></script>
     <script src="js/main.js"></script>
     <script>
-      window.addEventListener('load', function () {
-         new Glider(document.querySelector('.glider'), {
-          slidesToShow: 3,
-          slidesToScroll: 5,
-          draggable: true,
-          // dots: '.dots',
-          arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
-          }
-        });
-  })
+      const config = {
+        type:'carousel',
+        perView:3,
+        breakpoints:{
+        1024:{
+            perView:4
+        },
+        900:{
+            perView:3
+        },
+        600:{
+            perView:2
+        },
+        400:{
+            perView:1
+        }
+    }
+      }
+     new Glide('.glide', config).mount();
     </script>
   </body>
 </html>
