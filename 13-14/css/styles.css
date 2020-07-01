@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body, html{
+  height: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -192,4 +197,136 @@ body {
     min-height: 30rem
   }
 }
+/*@SavageCodes Implementation*/
+.two{
+  border-radius: 5px;
+  margin-top: 10%;
+ }
+.text{
+    margin-top: 100px;
+  }
+  .content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 49px;
+    color: #1F2430;
+  }
+  .tiny{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 37px;
+    color: #1F2430;
+  }
+  .btn{
+      width: 238px;
+      height: 59px;
+      background: #2B7A7B;
+      border-radius: 5px;    
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;      
+      color: #ffffff;
+      margin-top: 50px;
+  }
+  @media only screen and (max-width: 1024px){
+    .text{
+      margin-top: 50px;
+    }
+    .content{
+      font-size: 20px;
+    }
+    .section{
+        margin-top: 2%;
+    }
+  }
+  @media only screen and (max-width: 970px){
+  .some{
+      width: 300px;
+  }
+  .bg{
+      height: 520px;
+  }
+  .section{
+      margin-top: 3%;
+  }
+  }
+  @media only screen and (max-width: 840px){
+    .one, .three, .tiny{
+      display: none;
+    }
+    .profile{
+      background: #ECECEC;
+      margin-top: 10%;
+    }
+    .content{
+      text-align: center;
+    }
+    .btn{
+      width: 120px;
+      margin-left: 30%;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .profile{
+      margin-top: 10%;
+      background: #ECECEC;
+    }
+    .bg{
+        height: 400px;
+    }
+    .content{
+      font-size: 3vw;
+      line-height: 30px;
+    }
+    .btn{
+      margin-top: 20px;
+    }
+    .two{
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+ @media only screen and (max-width: 575px){
+   .bg{
+     background: url(../img/lifestyle/mobile.png) no-repeat center ;
+     height: 306px;
+     background-size: cover;
+   }
+   .two{
+    width: 153px;
+    height: 165px;
+    margin-left: 50%;
+    margin-top: 20%;
+    transform: translate(-50%, -30%);
+   }
+   .text{
+     margin-top: 2%;
+   }
+   .content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+   }
+   .some{
+    width: 200px;
+    height: 150px;
+   }
+   .some p{
+       margin-top: 0px;
+       font-size: 15px;
+       line-height: 20px;
+   }
+   .btn{
+     margin-left: 50%;
+     transform: translate(-50%, -50%);
+   }
+ }
 
