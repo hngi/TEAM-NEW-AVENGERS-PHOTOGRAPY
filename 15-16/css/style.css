@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #505962;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 #portfolio-section {
-  margin: 100px 0;
+  /* margin: 100px 0; */
 }
 
 .section-title h1::before {
@@ -113,7 +113,7 @@ body {
   }
 
 .portfolio {
-  height: 368px;
+  height: 300px;
   background: #45a29e;
   text-align: center;
   color: #fff;
@@ -127,6 +127,15 @@ body {
   content: "";
   border-bottom: 1px solid #fff;
   width: 50px;
+}
+
+.glide__arrow{
+  border-radius: 50% !important;
+  padding: 1em;
+}
+
+.slider{
+  margin-top: 3em !important;
 }
 
 input {
@@ -190,6 +199,10 @@ footer {
 
 .contact-section .navbar-brand {
   color: #45a29e !important;
+}
+
+.hide-on-large{
+  display: none;
 }
 
 /* media queries */
@@ -306,5 +319,13 @@ footer {
     max-width: 50%;
     display: block;
     margin: 0 auto;
+  }
+
+  .hide-on-mobile{
+    display: none;
+  }
+
+  .hide-on-large{
+    display: block;
   }
 }
