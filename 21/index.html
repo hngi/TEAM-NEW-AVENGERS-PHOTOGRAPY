@@ -45,6 +45,9 @@
     background-size: cover;
     
 }
+.travel-edf{
+  margin-bottom: 30px;
+}
  section.pricing {
   background: white;
   background: white; 
@@ -91,6 +94,9 @@
   opacity: 0.7;
   transition: all 0.2s;
 }
+.abt-1{
+  display: none;
+}
 /* .twit{
   font-size: 2em;
 } */
@@ -109,6 +115,13 @@
 .canvas-span{
   display: none; 
 }
+
+.travel-edf{
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
 @media (max-width: 960px) {
   /* nav ul     { display: none; }
   nav select { display: inline;} */
@@ -116,16 +129,33 @@
   .canvas-span { display: inline;
       color: #0047BA;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
 line-height: 150%;
 }
-
+.travel-edf{
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.img-edf{
+  margin-bottom: 40px;
+}
+.abt-2{
+  display: none;
+}
+.abt-1{
+  display: inline;
+  text-align: center;
+  margin-left: 110px;
+}
+.top-margin{
+  display: none; 
+}
 }
 
     </style>
 
 </head>
-
 
 <body>
   <nav id="mainnav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
@@ -161,7 +191,7 @@ line-height: 150%;
 </nav>
 <div class="container">
   <div class="row">
-    <div class="col-12" style="margin: 37px;">   
+    <div class="col-12 top-margin" style="margin: 18px;">   
     </div>
   </div>
 </div>
@@ -181,27 +211,6 @@ line-height: 150%;
                 <img class="img-fluid" src="images/img-1.png"  alt="">
             </div>
 
-
-            <!-- <nav class="col-sm-12 col-lg-2 text-center" style="color: #6C85AD; margin-bottom: 40px;" >
-              <ul style="list-style-type: none;">
-                <li class="lis"><a href="#">GALLERY</a></li> 
-                <li class="lis"> <a href="#">SERVICES</a></li>
-                <li class="lis"> <a href="#">PRICING</a></li>
-                <li class="lis"> <a href="#">+211 7896 323</a></li>
-                <li class="lis"><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>  
-                <li class="lis"><a href="#"> <i class="fas fa-twitter" aria-hidden="true"></i></a></li>   
-            </ul>
-            <select name="" id="">
-              <option value="#">GALLERY</option>
-              <option value="#">SERVICES</option>
-              <option value="#">PRICING</option>
-              <option value="#">+211 7896 323</option>
-              <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
-              <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
-            </select>
-            </nav> -->
-           
-
         </div>
         <br/>
         <br/>
@@ -214,7 +223,7 @@ line-height: 150%;
     <div class="row">
        
         <div class="col-sm-12 col-lg-5">
-          <h4>TRAVEL EDITORIALS</h4>
+          <h4 class="travel-edf">TRAVEL EDITORIALS</h4>
           <p>I am available for your vacation or whatsoever you would like to have captures of. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
                in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
@@ -232,11 +241,11 @@ line-height: 150%;
     <br/>
     <div class="row">
       <br/>
-      <div class="col-sm-12 col-lg-7">
-        <img src="images/img-2.png" class="img-fluid" alt="">
+      <div class="col-sm-12 col-lg-7 col-sm-push-6">
+        <img src="images/img-2.png" class="img-fluid img-edf" alt="">
     </div>
-        <div class="col-sm-12 col-lg-5">
-            <h4>TRAVEL FILMS</h4>
+        <div class="col-sm-12 col-lg-5 col-sm-pull-6">
+            <h4 class="travel-edf">TRAVEL FILMS</h4>
             <p>I am available for your vacation or whatsoever you would like to have captures of. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi, 
                 in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
@@ -249,10 +258,9 @@ line-height: 150%;
        
     </div>
     <br/>
-    <br/>
     <div class="row">
         <div class="col-sm-12 col-lg-5 col-md-6">
-            <h4>TRAVEL DOCUMENTARIES</h4>
+            <h4 class="travel-edf">TRAVEL DOCUMENTARIES</h4>
             <p>I am available for your vacation or whatsoever you would like to have captures of. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
                  in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
@@ -270,6 +278,7 @@ line-height: 150%;
 <br/>
 <br/>
 <br/>
+<h2 class="text-center abt-1">ABOUT ME</h2>
 <div class="d-flex" style="background-color: #add8e6;">
     <div class="row justify-content-center">
         <div class="col-sm-12 col-lg-4">
@@ -277,8 +286,8 @@ line-height: 150%;
         </div>
         <div class="col-sm-12 col-lg-5 flex-last">
             <br/>
-            <h2>ABOUT ME</h2>
-            <p>I am available for your vacation or whatsoever you would like to have captures of. 
+            <h2 class="abt-2">ABOUT ME</h2>
+            <p style="height: 100%; padding: 10px;">I am available for your vacation or whatsoever you would like to have captures of. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
                  in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
                  Cras fermentum nisl id rhoncus viverra. Aenean elementum ipsum a euismod varius. 
@@ -300,16 +309,16 @@ line-height: 150%;
     <br/> 
     <div class="row">
         <div class="col-sm-12 col-lg-4">
-            <h4>TRAVEL EDITORIALS</h4>
-            <img src="images/img-6.png" class="img-fluid" alt="">
+            <h4 class="travel-edf">TRAVEL EDITORIALS</h4>
+            <img src="images/img-6.png" class="img-fluid img-edf" alt="">
         </div>
         <div class="col-sm-12 col-lg-4">
-          <h4>TRAVEL DOCUMENTARIES</h4>
-            <img src="images/img-7.png" class="img-fluid" alt="">
+          <h4 class="travel-edf">TRAVEL DOCUMENTARIES</h4>
+            <img src="images/img-7.png" class="img-fluid img-edf" alt="">
         </div>
         <div class="col-sm-12 col-lg-4">
-          <h4>TRAVEL FILMS</h4>
-            <img src="images/img-8.png" class="img-fluid" alt="">
+          <h4 class="travel-edf">TRAVEL FILMS</h4>
+            <img src="images/img-8.png" class="img-fluid img-edf" alt="">
         </div>
     </div>
     <br/>
@@ -427,67 +436,50 @@ line-height: 150%;
       </div>
     </div>
   </section>
-
 <!-- contact me -->
-  <section class="container" style="background: #D0DEF4;">
-    <br/>
-    <br/>
-        <p class="text-center" style="color: #424242;">You are the one I have been waiting for, <span style="color: #0047BA;">BOOK </span> an appointment with me. </p>
-        <div class="row justify-content-center aligh-item-center">
-            <div class="col-4 bg-white ">
-                <br/>
-                <h3 class="text-center text-primary">Contact Me</h3>
-                <p class="text-center">You can fill this form, I'm always available to work and give you best exprience.</p>
-                <form>
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
-                    </div>
-                    <br/>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-                      </div>
-                      <br/>
-                    <div class="form-group">
-                      <!-- <label for="Textarea">Message (Tell me what I can do for you)</label> -->
-                      <textarea class="form-control"  rows="3">Message (Tell me what I can do for you) </textarea>
-                    </div>
-                    <br/>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-4">
-                            <button class="btn btn-primary text-center">Send</button>
-                        </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="text-center"> Or reach me on any of these</p>
-                            <br/>
-                        </div>
-                        
-                    </div>
 
-                  </form>
-                  <div class="row text-center">
-                    <!-- <div class="col-2">
-                        <i class="fa fa-check-circle" id="cycle" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-2">
-                        <i class="fa fa-check-circle" id="cycle" aria-hidden="true"></i>
-                    </div> -->
-                    <div class="col-12">
-                        <p style="font-size: 23px;"> <span><i class="fab fa-twitter twit" aria-hidden="true"></i></span> <span><i class="fab fa-instagram twit" id="cycle" aria-hidden="true"></i></span> +211 7896 323</p>
-                    </div>
-                </div>
-                </div>
-                
-            </div>
-           
-        </div>
-        <br/>
-        <br/>
-        <br/>
-  </section>
+
+<div class="container" style="background: white" >
+  <form action="#">
+    <p class="text-center" style="color: #424242;">You are the one I have been waiting for, <span style="color: #0047BA;">BOOK </span> an appointment with me. </p>
+    <h3 class="text-center text-primary" style="text-align: center;">Contact Me</h3>
+      <p class="text-center">You can fill this form, I'm always available to work and give you best exprience.</p>
+    <div class="row">
+      <div class="col-100">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-100">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-100">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Send">
+    </div>
+  </form>
+  <br/>
+  <br/>
+  <br/>
+  <div class="row" >
+    <div class="col-12 text-center" style="color: #6C85AD;">
+        <p class="text-center"> Or reach me on any of these</p>
+        <p style="font-size: 23px;"> <span><i class="fab fa-twitter twit" aria-hidden="true"></i></span> <span><i class="fab fa-instagram twit" id="cycle" aria-hidden="true"></i></span> +211 7896 323</p>
+    </div>
+    <div class="col-12">
+      <!-- <p class="contact-details" style="font-size: 23px; margin-left: 400px;"> <span><i class="fab fa-twitter twit" aria-hidden="true"></i></span> <span><i class="fab fa-instagram twit" id="cycle" aria-hidden="true"></i></span> +211 7896 323</p> -->
+  </div>
+</div>
+
+</div>
+
+
+
 
  <!-- Footer -->
  <footer class="page-footer font-small blue pt-4" style="background-color: #D0DEF4;">
@@ -498,10 +490,8 @@ line-height: 150%;
 
       <!-- Grid column -->
       <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h1 class="canvas" style="margin-left: 50px;">THE </h1>
-        <h1 class="canvas" style="margin-left: 50px;"> CANVAS</h1>
+        <h1 style="margin-left: 50px; color: #0047BA;">THE </h1>
+        <h1 style="margin-left: 50px; color: #0047BA;"> CANVAS</h1>
       </div>
 
       <hr class="clearfix w-100 d-md-none pb-3">
