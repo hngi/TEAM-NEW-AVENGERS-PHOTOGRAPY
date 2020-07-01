@@ -3,14 +3,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #505962;
 }
-
-.offset:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -4rem;
-}
-
 /* navigation */
 
 .navbar {
@@ -80,8 +72,8 @@ body {
   padding: 0;
 }
 
-#portfolio-section {
-  /* margin: 100px 0; */
+#gallery-section {
+   margin: 100px 0;
 }
 
 .section-title h1::before {
@@ -104,12 +96,13 @@ body {
 
 
 .text-box::after {
-    width: 15.78px;
-    height: 17.7px;
+    width: 41px;
+    height: 46px;
     display: block;
     content: "";
     background: #45A29E;
     margin-left: 100%;
+    margin-top: 100px;
   }
 
 .portfolio {
@@ -167,6 +160,7 @@ input::placeholder {
 .section-title h1 {
   font-size: 64px;
   font-weight: 900;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -222,6 +216,11 @@ footer {
   .text-box::after {
     width: 15.78px;
     height: 17.7px;
+    margin-top: 0 !important;
+  }
+
+  .text-box h4 {
+    font-size: 13px;
   }
 
   .contact-g {
@@ -287,9 +286,9 @@ footer {
     margin-bottom: 5px;
   }
 
-  .text-box h4 {
+  /* .text-box h4 {
     font-size: 15px;
-  }
+  } */
 
   .intro-content {
     padding: 20px;
