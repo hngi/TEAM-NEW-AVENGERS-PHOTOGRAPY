@@ -41,6 +41,14 @@ header {
     z-index: 10;
 }
 
+#navi {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: #0298d5;
+    z-index: 20;
+}
+
 /* Logo */
 
 #logo {
@@ -91,8 +99,7 @@ header {
     position: relative;
     width: 100%;
     height: 500px;
-    background-image: url(img/11.png);
-    background-position: center;
+    background-image: url(img/12x.jpg);
     padding: 0 2rem;
     display: flex;
     align-items: center;
@@ -428,6 +435,9 @@ header {
         margin-bottom: 4rem;
         width: 100%;
     }
+    #banner {
+        background-position: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -436,5 +446,41 @@ header {
         background-color: transparent;
         border: 1px solid #fff;
         color: #fff;
+    }
+    #banner {
+        min-height: 300px;
+        background-image: url(img/xsm.jpg);
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container-fluid {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .gallery {
+        max-width: 1440px;
+    }
+    #banner-text {
+        max-width: 30%;
+        color: #fff;
+    }
+    #banner {
+        width: 1440px;
+        margin: 0 auto;
+        height: 600px;
+    }
+    #nav-links {
+        width: 1440px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 30;
+    }
+    #navi {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 30;
     }
 }
