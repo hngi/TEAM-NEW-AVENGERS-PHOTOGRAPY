@@ -28,24 +28,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 10%;
+  left: 30%;
+  position:absolute;
 }
 
 .flex > div {
   flex: 1;
 }
 
-
+.img-wrapper{
+  padding: 0px;
+  position: absolute;
+  left: 40%;
+  bottom: 85%;
+}
 
 nav {
   background-image: url(./images/Frame\ 1.png);
   height: 900px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   /* position: fixed; */
   /* top: 0;
   left: 0; */
   max-width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 nav ul {
@@ -54,19 +62,21 @@ nav ul {
   padding: 0;
   align-items: center;
   margin-top: 30px;
+  position: relative;
 }
 
 nav li {
   margin-left: 30px;
-  color: white;
+  color: black;
   opacity: 1;
   text-decoration: none;
+  padding: 5px 20px;
 }
 
 nav li a {
   text-decoration: none;
   text-transform: uppercase;
-  color:white;
+  color: black;
   margin-top: 50px;
   font-size: 15px;
   
@@ -82,7 +92,11 @@ nav li a:hover {
 
 
 nav .hamburger {
-  display: none;
+  display:none;
+  /* float: right; */
+  left: 90%;
+  background-color: #2B7A78;
+ margin-top: 10px; 
 }
 
 nav .hamburger:focus {
@@ -177,7 +191,60 @@ input[type=text],input[type=email], select, textarea {
     border-radius: 5px;
     padding: 50px;
   }
+  .col-dis{
+    display: none;
+  }
 
+
+  
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 5px 16px;
+  background-color:white;
+
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+ 
+  min-width: 160px;
+  /* z-index: 1; */
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin-top:-20px;
+  margin-left: 15px;
+}
+
+
+
+.dropdown-content p:hover {
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  background-color:white;
+  
+}
+.aug{
+  margin-top: 5px;
+}
+nav center{
+  display: none;
+}
+  
 
 @media screen and (max-width: 768px) {
     body {
@@ -186,6 +253,9 @@ input[type=text],input[type=email], select, textarea {
   
     .flex {
       flex-direction: column;
+    }
+    nav center{
+      display:flex;
     }
   
     .btn-primary {
@@ -205,6 +275,8 @@ input[type=text],input[type=email], select, textarea {
       background-color: transparent;
       border: 0;
       cursor: pointer;
+      position: relative;
+      
     }
   
     nav .hamburger .close {
@@ -213,6 +285,7 @@ input[type=text],input[type=email], select, textarea {
   
     nav .hamburger.show .open {
       display: none;
+      
     }
   
     nav .hamburger.show .close {
@@ -242,6 +315,7 @@ input[type=text],input[type=email], select, textarea {
       align-items: center;
       justify-content: center;
     }
+    
   
     nav ul li {
       margin: 20px 0;
@@ -254,7 +328,7 @@ input[type=text],input[type=email], select, textarea {
         
         height: 450px;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         /* position: fixed; */
         /* top: 0;
         left: 0; */
@@ -279,9 +353,7 @@ input[type=text],input[type=email], select, textarea {
       font-size: 40px;
     }
   
-    header {
-      /* display: none; */
-    }
+   
     nav {
         padding-bottom: 0px;
         height: 450px;
@@ -329,5 +401,66 @@ input[type=text],input[type=email], select, textarea {
     top: 150px;
     left: 100px;
 }
+.col-dis{
+  display:block;
+  width: 100%;
+}
+.col-nod{
+  display: none;
+  padding: 0%;
+  margin: 0%;
+}
+.img-wrapper{
+  padding: 0px;
+  position:relative;
+  left: 50%;
+  bottom: 91%;
+}
   }
   
+  @media screen and (max-width: 1400px){
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+    left: 25%;
+    position:absolute;
+  }
+  
+  .flex > div {
+    flex: 1;
+  }
+  
+  .img-wrapper{
+    padding: 0px;
+    position: absolute;
+    left: 42%;
+    bottom: 85%;
+  }
+
+}
+
+@media screen and (max-width: 1050px){
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10%;
+    left: 18%;
+    position:absolute;
+  }
+  
+  .flex > div {
+    flex: 1;
+  }
+  
+  .img-wrapper{
+    padding: 0px;
+    position: absolute;
+    left: 42%;
+    bottom: 85%;
+  }
+  .pad{
+    padding-left: 100px;
+  }
