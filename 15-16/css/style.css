@@ -1,3 +1,5 @@
+
+
 body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -40,7 +42,7 @@ body {
 }
 
 .header-text {
-  padding: 200px 0;
+  padding-top: 130px ;
   color: #fff;
 }
 
@@ -50,21 +52,51 @@ body {
 
 .header-text h1 {
   font-size: 64px;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 auto 40px auto;
+}
+
+
+.intro-section {
+  margin-top: 100px;
+}
+.intro-part, .no-margin {
+  margin:0 !important;
+  padding: 0 !important;
 }
 
 .image-box {
-  width: 335px;
-  height: 507px;
+ background: url('../img/slide.png') no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 645px;
 }
 
 .text-box {
-  width: 340px;
-  height: 382px;
+ height: 645px;
+ padding: 120px 110px 120px 30px;
   background: #45a29e;
   margin: auto 0;
   color: #fff;
+  font-family: Roboto;
+}
+
+.text-box p {
+  font-size: 18px;
+}
+
+
+.text-box .description {
+  padding: 40px 0;
+  font-size: 24px;
+}
+
+input {
+  height: 42px !important;
+  width: 354px !important;
+  border: 2px solid #fff !important;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .slides {
@@ -72,38 +104,15 @@ body {
   padding: 0;
 }
 
+.slides img {
+  width: 380px;
+}
+
 #gallery-section {
    margin: 100px 0;
 }
 
-.section-title h1::before {
-  display: block;
-  content: "";
-  height: 19px;
-  width: 18px;
-  background: #1ebba3;
-}
 
-.section-title h1::after {
-  display: block;
-  content: "";
-  height: 19px;
-  width: 18px;
-  background: #1ebba3;
-  margin-left: 85%;
-}
-
-
-
-.text-box::after {
-    width: 41px;
-    height: 46px;
-    display: block;
-    content: "";
-    background: #45A29E;
-    margin-left: 100%;
-    margin-top: 100px;
-  }
 
 .portfolio {
   height: 300px;
@@ -132,9 +141,10 @@ body {
 }
 
 input {
-  height: 56px !important;
-  width: 644px !important;
-  border: 2px solid #45a29e !important;
+  width: 354px  !important;
+height: 42px !important;
+  border: 2px solid #fff !important;
+  background: transparent !important;
   max-width: 100%;
 }
 
@@ -164,10 +174,12 @@ input::placeholder {
 }
 
 footer {
-  height: 142px;
+  height: 451px;
   background: #45a29e;
   color: #fff;
   padding: 59px 0;
+  margin-top: 100px;
+  font-family: Prompt;
 }
 
 .socials {
@@ -199,11 +211,47 @@ footer {
   display: none;
 }
 
+.footer-title h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .navbar-brand {
+  color: #fff !important;
+  font-size: 24px !important;
+  margin-bottom: 30px;
+}
+
 /* media queries */
 
 @media (max-width: 767px) {
   .navbar-brand {
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  footer .navbar-brand {
+    font-size: 15px !important;
   }
   .portfolio {
     height: 1080px;
@@ -213,14 +261,9 @@ footer {
   display: none;
 }
 
-  .text-box::after {
-    width: 15.78px;
-    height: 17.7px;
-    margin-top: 0 !important;
-  }
-
+  
   .text-box h4 {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .contact-g {
@@ -263,24 +306,62 @@ footer {
     padding: 3px 10px;
   }
 
+  footer {
+    height: 600px;
+    padding-top: 23px;
+    font-family: 'Prompt', sans-serif;
+  }
+
   footer p {
-    font-size: 10px;
+    font-size: 13px;
+    text-align: center;
   }
-  footer img {
-    height: 17px;
-    width: 17px;
+
+  .footer-centered {
+    text-align: center;
   }
-  .image-box,
-  .image-box img {
-    width: 136.74px;
-    height: 230.29px;
+
+  .footer-centered h3 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  footer form {
+    max-width: 100%;
+  }
+
+  footer input {
+    width: 237.87px !important;
+    height: 25.93px !important;
+    margin:28px  0;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  /* .text-box {
+    width: 131.14px;
+    height: 190.31px;
+  } */
+
+  .image-box {
+    height: 309px;
   }
 
   .text-box {
-    width: 131.14px;
-    height: 190.31px;
-  }
+    height: 309px;
+    padding: 40px 15px 0 12px;
+    background: #45a29e;
+    margin: auto 0;
+    color: #fff;
+    font-family: Roboto;
+}
 
+.text-box .description {
+    padding: 10px 0;
+    font-size: 8px;
+}
   .text-box p {
     font-size: 8px;
     margin-bottom: 5px;
