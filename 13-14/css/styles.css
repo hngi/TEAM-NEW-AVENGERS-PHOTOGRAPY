@@ -343,7 +343,7 @@ padding-left: 40px;
     text-align: center;
   }
   .btn{
-    width: 120px;
+    width: 140px;
     margin-left: 30%;
   }
 }
@@ -397,7 +397,7 @@ padding-left: 40px;
    transform: translate(-50%, -50%);
  }
 }
-Niche{
+.Niche{
   height: 100%;
   position: relative;
  }
@@ -449,16 +449,34 @@ Niche{
  .img{
    width: 100%;
  }
- @media only screen and (max-width: 768px){
-   .image{
-     display: none;
+ .niche-sec{
+   margin-left: 5%;
+   margin-top: 5%;
+ }
+ 
+ 
+ @media only screen and (max-width: 768px) and (min-width: 570px){
+   .box p{
+     width: 700px;
+     padding-left: 70px;
+     font-size: 3vw;
    }
+ }
+ @media only screen and (max-width: 768px){
+   *{
+     width: 100%;
+   }
+.lil{
+  display: none;
+}
    .Niche{
      margin-top: 10%;
      background-image: url(https://res.cloudinary.com/olasumboeniola/image/upload/v1593654662/Rectangle_9_2_1_xjfkka.png);
      background-size: cover;
      background-repeat: no-repeat;
      height: 100%;
+     width: 100%;
+     margin: auto;
    }
    .box{
      background-color: transparent;
@@ -473,10 +491,19 @@ Niche{
      color: white;
  
    }
+   .details{
+     color: white;
+     font-size: 20px;
+     padding-left: 170px;
+   }
    .box p{
      color: white;
      font-size: 20px;
    }
+   .niche-sec{
+     margin-left: 0%;
+   }
+  
  }
  @media only screen and (max-width: 768px) and (min-width: 570px){
    .box p{
@@ -485,3 +512,11 @@ Niche{
      font-size: 3vw;
    }
  }
+@media only screen and (max-width: 416px){
+  .box p{
+    padding-left: 20px;
+  }
+  .btn{
+    padding-left: 20px;
+  }
+}
