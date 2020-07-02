@@ -1,0 +1,174 @@
+/* nav bar */
+
+#mainnav{
+    background-color: #D0DEF4;
+   
+}
+#mainnav .navbar-brand{
+    /* color: #EA1C2C;    */
+    font-size: 1.5rem;
+    font-weight: 100;
+   
+}
+.cont{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#mainnav .nav-link{
+    color: #0047BA;
+}
+#mainnav .nav-link:hover{
+    color: blue; 
+}
+
+#mainnav {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#dudu span{
+    color: #EA1C2C
+}
+#dudu h1{
+    font-weight: 100;
+}
+
+@media (max-width: 1200px) {
+    #dudu h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}; 
+
+    @media screen and (min-width: 480px) {
+        .newrow {
+          width: 100;
+        }
+        .firstfields {
+          margin-top: 10px;
+          margin-left: 5px;
+        }
+        .drop2 {
+          padding: 6px;
+          padding-right: 3em;
+          border: none;
+          color: black;
+          width: 85%;
+        }
+        .fields {
+          border: 1px #A9A9A9 solid;
+          width: 200px;
+          margin: 1em;
+          height: 75px;
+          color: #A9A9A9;
+          font-size: 11px;
+        }
+        input[type=text] {
+          width: 65%;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 3px solid #fff;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          outline: none;
+        }
+        input[type=email] {
+          width: 65%;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 3px solid #fff;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          outline: none;
+        }
+        input[type=email]:focus {
+          border: 3px solid #fff;
+        }
+        .drop {
+          width: 160px;
+        }
+        .drop select:focus {
+          box-shadow: 0 0 3pt 2pt #fff!important;
+        }
+        .drop1 {
+          width: 85%;
+          padding: 6px;
+          padding-right: 6em;
+          border: none;
+          color: black;
+        }
+        input[type=text]:focus {
+          border: 3px solid #fff;
+        }
+        .newpagebody {
+          background-size: auto;
+        }
+      }
+
+
+      /* contact me */
+      /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #D0DEF4;
+    color: #0047BA;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  /* Floating column for labels: 25% width */
+  
+  
+  /* Floating column for inputs: 75% width */
+  .col-100 {
+    float: center;
+    width: 100%;
+    margin-top: 6px;
+    align-items: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .list-unstyled{
+      text-decoration: none !important;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-100 input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      align-items: center;
+    }
+  }
