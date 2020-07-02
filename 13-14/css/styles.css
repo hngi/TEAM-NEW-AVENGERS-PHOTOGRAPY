@@ -34,6 +34,8 @@ body {
   background-image: url('../images/header.png');
   background-position: center;
   background-size: cover;
+  position: relative;
+  margin-top: -15%;
   /* height: 90vh; */
   /* margin-bottom: 50px; */
 }
@@ -234,99 +236,252 @@ body {
       color: #ffffff;
       margin-top: 50px;
   }
-  @media only screen and (max-width: 1024px){
-    .text{
-      margin-top: 50px;
-    }
-    .content{
-      font-size: 20px;
-    }
-    .section{
-        margin-top: 2%;
-    }
-  }
-  @media only screen and (max-width: 970px){
-  .some{
-      width: 300px;
-  }
   .bg{
-      height: 520px;
+    height: 670px;
+  background-size: cover;
+  position: relative;
+}
+
+.four{
+  position: absolute;
+   width: 47%;
+  height: 300px;
+  left: 0px;
+  object-fit: cover;
+ 
+}
+.five{
+  position: absolute;
+  width: 47%;
+  height: 300px;
+  right: 0px;
+  object-fit: cover;
+ 
+}
+.six{
+  position: absolute;
+  width:47%;
+ height: 300px;
+ left: 0px;
+ bottom: 0px;
+margin-top: 30%;
+object-fit: cover;
+}
+.seven{
+  position: absolute;
+  width: 47%;
+  height: 300px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 30%;
+  object-fit: cover;
+}
+.some{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+  background: #FFFFFF;
+border: 4px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 10px;
+width: 20%;
+height:250px;
+position: absolute;
+z-index: 100;
+
+}
+.some p{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 28px;
+color: #1F2430;
+padding-left: 40px;
+margin-top: 30px;
+}
+.some a{
+    color: #2B7A7B;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+margin-top: 50px;
+padding-left: 40px;
+}
+@media only screen and (max-width: 1024px){
+  .text{
+    margin-top: 50px;
+  }
+  .content{
+    font-size: 20px;
   }
   .section{
-      margin-top: 3%;
+      margin-top: 2%;
   }
+}
+@media only screen and (max-width: 970px){
+.some{
+    width: 300px;
+}
+
+.section{
+    margin-top: 3%;
+}
+}
+@media only screen and (max-width: 840px){
+  .one, .three, .tiny{
+    display: none;
   }
-  @media only screen and (max-width: 840px){
-    .one, .three, .tiny{
-      display: none;
-    }
-    .profile{
-      background: #ECECEC;
-      margin-top: 10%;
-    }
-    .content{
-      text-align: center;
-    }
-    .btn{
-      width: 140px;
-      margin-left: 30%;
-    }
+  .profile{
+    background: #ECECEC;
+    margin-top: 10%;
   }
-  @media only screen and (max-width: 768px){
-    .profile{
-      margin-top: 10%;
-      background: #ECECEC;
-    }
-    .bg{
-        height: 400px;
-    }
-    .content{
-      font-size: 3vw;
-      line-height: 30px;
-    }
-    .btn{
-      margin-top: 20px;
-    }
-    .two{
-      width: 100%;
-      margin-left: auto;
-    }
+  .content{
+    text-align: center;
   }
- @media only screen and (max-width: 575px){
-   .bg{
-     background: url(../img/lifestyle/mobile.png) no-repeat center ;
-     height: 306px;
+  .btn{
+    width: 120px;
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .profile{
+    margin-top: 10%;
+    background: #ECECEC;
+  }
+ .content{
+    font-size: 3vw;
+    line-height: 30px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+  .two{
+    width: 100%;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 575px){
+ 
+ .two{
+  width: 153px;
+  height: 165px;
+  margin-left: 50%;
+  margin-top: 20%;
+  transform: translate(-50%, -30%);
+ }
+ .text{
+   margin-top: 2%;
+ }
+ .content{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+ }
+ .some{
+  width: 200px;
+  height: 150px;
+ }
+ .some p{
+     margin-top: 0px;
+     font-size: 15px;
+     line-height: 20px;
+ }
+ .btn{
+   margin-left: 50%;
+   transform: translate(-50%, -50%);
+ }
+}
+Niche{
+  height: 100%;
+  position: relative;
+ }
+ .box{
+   background: #FFFFFF;
+ box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.2);
+ z-index: 1000;
+ }
+ .box h1{
+   margin-top: 53px;
+   font-family: Montserrat;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 5vw;
+ line-height: 78px;
+ margin: auto;
+ padding-left: 153px;
+ font-feature-settings: 'cpsp' on;
+ 
+ color: #1F2430;
+ 
+ }
+ .box p i{
+ color: #2B7A7B;
+ }
+ .box p{
+   margin-top: 50px;
+   padding-left: 100px;
+   font-family: Roboto;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 2vw;
+ color: #1F2430;
+ }
+ .details{
+   font-family: Roboto;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 2vw;
+ line-height: 28px;
+ color: #2B7A7B;
+ padding-left: 244px;
+ margin-top: 50%;
+ 
+ }
+ .link{
+   margin-top: 50px;
+ }
+ .img{
+   width: 100%;
+ }
+ @media only screen and (max-width: 768px){
+   .image{
+     display: none;
+   }
+   .Niche{
+     margin-top: 10%;
+     background-image: url(https://res.cloudinary.com/olasumboeniola/image/upload/v1593654662/Rectangle_9_2_1_xjfkka.png);
      background-size: cover;
+     background-repeat: no-repeat;
+     height: 100%;
    }
-   .two{
-    width: 153px;
-    height: 165px;
-    margin-left: 50%;
-    margin-top: 20%;
-    transform: translate(-50%, -30%);
+   .box{
+     background-color: transparent;
+     box-shadow: none;
+     width: 100%;
+   
    }
-   .text{
-     margin-top: 2%;
+   .box h1{
+     color: white;
    }
-   .content{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
+   .box p i {
+     color: white;
+ 
    }
-   .some{
-    width: 200px;
-    height: 150px;
-   }
-   .some p{
-       margin-top: 0px;
-       font-size: 15px;
-       line-height: 20px;
-   }
-   .btn{
-     margin-left: 50%;
-     transform: translate(-50%, -50%);
+   .box p{
+     color: white;
+     font-size: 20px;
    }
  }
-
+ @media only screen and (max-width: 768px) and (min-width: 570px){
+   .box p{
+     width: 700px;
+     padding-left: 70px;
+     font-size: 3vw;
+   }
+ }
