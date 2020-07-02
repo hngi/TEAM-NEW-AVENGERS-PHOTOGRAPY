@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body, html{
   height: 100%;
+  width: 100%;
 }
 * {
   margin: 0;
@@ -29,7 +30,9 @@ body {
 }
 
 /* nav bar */
-
+.nav-wrapper::before{
+  background: linear-gradient(180deg, rgba(40, 38, 38, 0.85) 2.61%, rgba(34, 43, 72, 0.72) 10.55%, rgba(28, 48, 105, 0.57) 16.97%, rgba(6, 21, 59, 0.34) 38.37%, rgba(6, 21, 59, 0.34) 42.54%, rgba(6, 21, 59, 0.34) 47.35%, rgba(6, 21, 59, 0.34) 52.57%);;
+}
 .nav-wrapper {
   background-image: url('../images/header.png');
   background-position: center;
@@ -321,12 +324,20 @@ padding-left: 40px;
   .section{
       margin-top: 2%;
   }
+  .contact-text h4{
+    font-size: 3vw;
+  }
+  .contact-text p{
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 970px){
 .some{
     width: 300px;
 }
-
+.contact-text{
+  font-size: 3vw;
+}
 .section{
     margin-top: 3%;
 }
@@ -372,6 +383,10 @@ padding-left: 40px;
   margin-left: 50%;
   margin-top: 20%;
   transform: translate(-50%, -30%);
+ }
+ .contact-text h4{
+   line-height: 10px;
+   font-size: 16px;
  }
  .text{
    margin-top: 2%;
@@ -454,6 +469,32 @@ padding-left: 40px;
    margin-top: 5%;
  }
  
+ .contact{
+  position: relative;
+  text-align: center;
+  color: white;
+ }
+ .contact-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .contact-text h4{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+ }
+ .contact-text p{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 85px;
+  text-transform: capitalize;
+ }
  
  @media only screen and (max-width: 768px) and (min-width: 570px){
    .box p{
@@ -468,6 +509,9 @@ padding-left: 40px;
    }
 .lil{
   display: none;
+}
+.blog .btn{
+  font-size: 16px;
 }
    .Niche{
      margin-top: 10%;
@@ -518,5 +562,173 @@ padding-left: 40px;
   }
   .btn{
     padding-left: 20px;
+  }
+}
+.gallery{
+  background: #DEF2F1;
+}
+.eight{
+  width: 47%;
+
+}
+.nine{
+  width: 47%
+}
+.ten{
+  width: 47%;
+
+}
+.eleven{
+  width: 47%;
+}
+.gallery-text{
+  margin-top: 30%;
+  margin-left: 5%;
+}
+.gallery-text h4{
+  font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+}
+.button.btn{
+background: #2B7A7B;
+border-radius: 5px;
+padding-top: 16px;
+padding-bottom: 16px;
+color: white;
+}
+.vector{
+  margin-top: 35%;
+}
+.blog .btn{
+  margin-top: 30%;
+  background: #2B7A7B;
+border-radius: 5px;
+padding-top: 16px;
+padding-bottom: 16px;
+margin-left: 30%;
+}
+.blog-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-text h4{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 70px;
+}
+.blog-sec{
+  position: relative;
+  text-align: left;
+  color: white;
+}
+@media only screen and (max-width: 1024px){
+  body{
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 930px){
+  .gallery-text{
+    margin-top: 20%;
+    margin-left: 0%;
+  }
+  .blog-text h4{
+    font-size: 35px;
+  }
+  .blog.btn{
+    width: 200px;
+    margin-left: 10%;
+  }
+  .contact-text h4{
+   font-size: 30px;
+  }
+  .contact-text p{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 800px){
+.gallery{
+  width: 100%;
+  margin: auto;
+  margin-left: 0.3% !important;
+}
+.gallery-text{
+  margin-left: -2%;
+}
+.gallery-text h4{
+  font-size: 30px;
+}
+
+
+}
+@media only screen and (max-width: 700px){
+  .gallery-text{
+    margin-top: 0%;
+  }
+  .gallery-text{
+    margin-top: 0%;
+  }
+  .gallery .btn{
+    font-size: 16px;
+  }
+  .gallery-text h4{
+    font-size: 20px;
+  }
+  .blog-text{
+    left: 55%;
+  }
+  .blog-text h4{
+    font-size: 30px;
+  }
+  .contact-text h4{
+    font-size: 30px;
+  }
+  .blog .btn{
+ font-size: 16px;
+  }
+}
+@media only screen and (max-width: 575px){
+
+  .gallery{
+    background-color: white;
+  }
+  .gallery-text{
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+  .gallery-img{
+    margin-left: 5%;
+  }
+  .gallery-text h4{
+    font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 32px;
+text-align: center;
+  }
+  .blog-sec{
+    margin-left: -2%;
+  }
+
+  
+  .blog .btn{
+    margin-left: 50%;
+    margin-top: 10%;
+    
+  }
+  .button.btn{
+    margin-top: 10%;
+  }
+  .vector{
+    display: none;
+  }
+  .vect{
+    display: none;
   }
 }
