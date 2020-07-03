@@ -1,0 +1,145 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  background-image: url(../images/woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
+}
+.image {
+  background-image: url(../images/image2.jpg);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about {
+  margin-top: 60px;
+}
+.picture {
+  background-image: url(../images/graph.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 440px;
+}
+.nav-item {
+  margin-left: 120px;
+}
+fa-home .btn-default {
+  background-color: #019960;
+  color: white;
+}
+.btn-def {
+  background-color: #019960;
+  color: white;
+  margin-bottom: 20px;
+}
+.btn-default:hover {
+  color: white;
+}
+#service {
+  margin-top: 60px;
+}
+.image {
+  background-image: url(../images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 100%;
+  padding-left: 20px;
+}
+.image9 {
+  background-image: url(../images/image2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 100%;
+}
+.image10 {
+  background-image: url(../images/image3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 100%;
+}
+.image11 {
+  background-image: url(../images/hatgirl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190px;
+  width: 100;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#testimony {
+  height: 700px;
+}
+#testimony h1 {
+  padding: 40px;
+}
+.testimony {
+  background-color: rgba(36, 88, 82, 0.5);
+  height: 500px;
+  padding: 80px;
+}
+.video {
+  background-image: url(../images/girl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 84px;
+  margin-right: 400px;
+
+  object-fit: contain;
+}
+
+.box {
+  background-image: url(../images/girl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.box1 {
+  background-image: url(../images/boy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+.box2 {
+  background-image: url(../images/guy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+#footer {
+  background-color: #245852;
+}
+.icon {
+  list-style: none;
+  text-align: left;
+  font-size: 25px;
+}
