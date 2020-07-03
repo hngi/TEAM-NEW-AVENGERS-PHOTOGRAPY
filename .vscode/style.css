@@ -1,0 +1,132 @@
+nav {
+  background-color: #c4c4c4;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+li a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+a span.span {
+  scale: 5;
+}
+.bg {
+  background-color: #999;
+}
+
+.hero-p {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.jd {
+  background-color: #c4c4c4;
+}
+
+.card-body h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 46px;
+
+  color: #1f2430;
+}
+
+.card-body p {
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #1f252a;
+}
+
+a.btn-go {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.set-height {
+  height: 550px;
+}
+
+li {
+  list-style: none;
+}
+
+.gallery-sectn,
+section {
+  background-color: #c4c4c4;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+li a img {
+  height: 12px;
+  width: 12px;
+  margin-right: 12px;
+}
+
+.collaboration h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 46px;
+
+  color: #1f2430;
+}
+
+h5.card-title {
+  font-size: 1.5rem;
+}
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
