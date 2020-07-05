@@ -1,0 +1,431 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 14px;
+}
+body {
+background: #ffffff;
+font-family: 'Playfair Display', serif !important;
+font-size: 10px;
+}
+h6 {
+font-family: inherit;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 53px;
+text-transform: capitalize;
+}
+h4 {
+font-family: inherit;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 55px;
+text-transform: capitalize;
+}
+h5{
+font-family: inherit;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+text-transform: capitalize;
+}
+p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+text-align:center-left;
+line-height: 19px;
+animation: fadein 2s;
+color: #1F252A;
+}
+@keyframes fadein {
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+}
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+@-moz-keyframes fadein {
+/* Firefox */
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+}
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+@-webkit-keyframes fadein {
+/* Safari and Chrome */
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+}
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+@-o-keyframes fadein {
+/* Opera */
+from {
+opacity: 0;
+-webkit-transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+}
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+a {
+color: #ffffff !important;
+text-decoration: none !important;
+margin: 0 1.2rem !important;
+font-size: 1rem;
+}
+a:hover {
+color: #000000 !important;
+text-decoration: none !important;
+}
+/* Nav */
+.nav {
+background-color: #1F252A !important;
+}
+/* HeroImage */
+.hero {
+background: url("../images/hero-Image.png") center center no-repeat;
+background-size: cover;
+width: 100%;
+height: 750px;
+}
+.hero-text {
+padding-top: 8rem;
+}
+.wrapper{
+padding: 50px 0 50px 0;
+}
+.feature-box{
+padding: 30px;
+}
+.feature-box h6{
+margin-bottom: 10px;
+}
+.feature-box p{
+margin: 50px auto;
+}
+.feature-img{
+width: 100%;
+padding: 60px;
+}
+#clients {
+background-color: #1F252A;
+max-width: 926px;
+height: 150px;
+position: relative;
+justify-items: center;
+top: -5rem;
+}
+/* ABOUT SECTION  */
+.image-box {
+background:url("../images/hand\ holding\ camera.png") no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 750px;
+width: 150%;
+position: absolute;
+left: calc(50% - 913px/2 - 263.5px);
+top: 925px;
+}
+.card-item {
+position: absolute;
+width: 706px;
+height: 225px;
+left: 500px;
+top: 1200px;
+box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+border: none;
+border-radius: 0px;
+background-color: #feffff;
+}
+.spacer2 {
+padding-top: 65rem;
+}
+section {
+padding: 1rem;
+}
+#services {
+height: 100vh;
+}
+figure img {
+max-width: 287px;
+height: auto;
+}
+/* Media Queries */
+@media only screen and (min-width: 894px){
+.lgs{
+padding-top: 25rem;
+}
+}
+@media screen and (max-width:768px) {
+}
+/* Create four equal columns that sits next to each other */
+.column {
+-ms-flex: 33%;
+flex: 33%;
+max-width: 33%;
+padding: 0 4px;
+}
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100px;
+}
+section.container-fluid{
+background: #FAFFFF;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+-ms-flex: 50%;
+flex: 50%;
+max-width: 50%;
+}
+#clients{
+-ms-flex: 50%;
+flex: 50%;
+max-width: 50%;
+}
+.card-item{
+-ms-flex: 50%;
+flex: 50%;
+width: 825px;
+height: 400px;
+box-shadow: 5px 2px 4px rgba(214, 217, 223, 0.5);
+left:50px;
+max-width: 50%;
+}
+.logo {
+-ms-flex: 50%;
+flex: 50%;
+max-width: 50%;
+}
+.nav-link{
+display:flex;
+max-width: 50%;
+}
+.new{
+display:flex;
+max-width: 70%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+-ms-flex: 100%;
+flex: 100%;
+max-width: 100%;
+}
+#clients{
+-ms-flex: 50%;
+flex: 50%;
+max-width: 50%;
+}
+.card-item{
+-ms-flex: 50%;
+flex: 50%;
+width: 825px;
+height: 400px;
+box-shadow: 5px 2px 4px rgba(214, 217, 223, 0.5);
+left:50px;
+max-width: 50%;
+}
+.logo {
+-ms-flex: 50%;
+flex: 50%;
+max-width: 100%;
+}
+.nav-link{
+display:flex;
+max-width: 50%;
+}
+}
+h6{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+color: #1F2430;
+}
+#new{
+left: 20px;
+right: 20px;
+top: 20px;
+display:flex;
+}
+#diamond{
+position: absolute;
+left: 250px;
+top: 124px;
+width: 12px;
+height: 12px;
+background: #3AAFA9;
+display:flex;
+transform: rotate(-45deg);
+}	
+hr.new1{
+border:1px solid #B5B5B5;
+border-radius: 5px;
+width:85%;
+}	
+.bs-example{
+margin: 20px;        
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: #FEFFFF;
+}
+h2{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 43px;
+color: #1F2430;
+}
+#cover {
+background:#1F252A  center no-repeat;
+background-size: cover;
+height: 100%;
+text-align: center;
+display: flex;
+align-items: center;
+position: relative;
+}
+#cover-caption {
+width: 100%;
+position: relative;
+z-index: 1;
+}
+/* only used for background overlay not needed for centering */
+form:before {
+content: '';
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: -1;
+border-radius: 5px;
+}
+h1,h3{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 43px;
+color: #FEFFFF;
+}
+label{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: #FEFFFF;
+}
+.btn-primary.custom-btn{
+background: #00AEFF;
+border-radius: 5px;
+}
+.form-control:valid {
+background-color:#1F252A!important;
+}
+.form-control1:valid {
+background-color:#2B7A78;!important;
+}
+/* Style for the website footer */
+.footer{
+background-color: #2B7A78;
+color: white;
+padding:50px 50px;
+}
+footer .footer{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+footer .fh{
+padding-bottom:-40px;
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 23px;
+color: #FEFFFF;
+}
+footer .flex{
+display: flex;
+width: 40%;
+margin-top:-6px;
+}
+footer .flex img{
+display: flex;
+width: 30px;
+height: auto;
+margin-top: 10px;
+}
+footer ul li{
+list-style: none;
+padding: 5px 0;
+}
+footer .m-b li{
+margin-left:-40px;
+}
+footer ul li a{
+color: white;
+}    
+.flex a{
+padding: 7px;  
+}
+.mycustom input[type=text] {
+border: none;
+width: 100%;
+padding-right: 123px;
+}
+.mycustom .input-group-prepend {
+display: flex;
+position: absolute;
+right: 4px;
+top: 4px;
+bottom: 4px;z-index:9;
+}
+.nav-item{
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 21px;
+color: #FEFFFF;
+}
